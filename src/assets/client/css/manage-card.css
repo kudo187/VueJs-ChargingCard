@@ -1,0 +1,1229 @@
+/* LuanNC added */
+
+
+
+#containerContent{
+    margin-top: 120px;
+}
+
+
+
+
+/* LuanNC added */
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url(../fonts/Roboto-Light.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #343434;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+a:hover {
+    outline: none;
+    color: #e02729;
+}
+
+a:hover img {
+    cursor: pointer;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+a:focus {
+    outline: none;
+}
+
+.btn.btn-outline-danger:hover {
+    background: red !important;
+    color: #fff !important;
+}
+
+/* ==============================
+ *  SideBar Left
+ * ============================*/
+
+
+#cssmenu .spriteAccountInfo {
+    background: url(../images/sprite-account-info.png);
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#cssmenu .spriteAccountInfo.info {
+    width: 19px;
+    height: 15px;
+    background-position: 0 0;
+}
+
+#cssmenu .active .spriteAccountInfo.info,
+#cssmenu .open .spriteAccountInfo.info,
+#cssmenu a:hover .spriteAccountInfo.info {
+    background-position: -26px 0;
+}
+
+#cssmenu .spriteAccountInfo.transfer {
+    width: 19px;
+    height: 17px;
+    background-position: 0 -45px;
+}
+
+#cssmenu .active .spriteAccountInfo.transfer,
+#cssmenu .open .spriteAccountInfo.transfer,
+#cssmenu a:hover .spriteAccountInfo.transfer {
+    background-position: -26px -45px;
+}
+
+#cssmenu .spriteAccountInfo.security {
+    width: 15px;
+    height: 18px;
+    background-position: -1px -91px;
+}
+
+#cssmenu .active .spriteAccountInfo.security,
+#cssmenu .open .spriteAccountInfo.security,
+#cssmenu a:hover .spriteAccountInfo.security {
+    background-position: -27px -91px;
+}
+
+#cssmenu .spriteAccountInfo.alarm {
+    width: 15px;
+    height: 18px;
+    background-position: -2px -114px;
+}
+
+#cssmenu .active .spriteAccountInfo.alarm,
+#cssmenu .open .spriteAccountInfo.alarm,
+#cssmenu a:hover .spriteAccountInfo.alarm {
+    background-position: -30px -114px;
+}
+
+#cssmenu .spriteAccountInfo.support {
+    width: 17px;
+    height: 18px;
+    background-position: 0 -167px;
+}
+
+#cssmenu .active .spriteAccountInfo.support,
+#cssmenu .open .spriteAccountInfo.support,
+#cssmenu a:hover .spriteAccountInfo.support {
+    background-position: -28px -167px;
+}
+
+#cssmenu .spriteAccountInfo.transfersime {
+    width: 19px;
+    height: 17px;
+    background-position: 0 -45px;
+}
+
+#cssmenu .active .spriteAccountInfo.transfersime,
+#cssmenu .open .spriteAccountInfo.transfersime,
+#cssmenu a:hover .spriteAccountInfo.transfersime {
+    background-position: -26px -45px;
+}
+
+
+.sprite2 {
+    background: url(../images/sprite2.png);
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#cssmenu .sprite2.g {
+    width: 16px;
+    height: 18px;
+    background-position: -2px -42px;
+}
+
+#cssmenu .active .sprite2.g,
+#cssmenu .open .sprite2.g,
+#cssmenu a:hover .sprite2.g {
+    background-position: -34px -42px;
+}
+
+#cssmenu .sprite2.share {
+    width: 18px;
+    height: 18px;
+    background-position: -2px 0;
+}
+
+#cssmenu .active .sprite2.share,
+#cssmenu .open .sprite2.share,
+#cssmenu a:hover .sprite2.share {
+    background-position: -32px 0;
+}
+
+#cssmenu .sprite2.card {
+    width: 20px;
+    height: 18px;
+    background-position: 0 -92px;
+}
+
+#cssmenu .active .sprite2.card,
+#cssmenu .open .sprite2.card,
+#cssmenu a:hover .sprite2.card {
+    background-position: -30px -92px;
+}
+
+#cssmenu .sprite2.phone {
+    width: 20px;
+    height: 21px;
+    background-position: -3px -137px;
+}
+
+.pay-bill .pay-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(../images/bill.png) center no-repeat;
+}
+
+.pay-bill.active .pay-icon {
+    background-image: url(../images/bill-white.png);
+}
+
+#cssmenu>ul>.pay-bill.active>a,
+#cssmenu>ul>.pay-bill.open>a {
+    background-color: #f0970a;
+    color: #fff;
+}
+
+#cssmenu>ul>.pay-bill.active>li a,
+#cssmenu>ul>.pay-bill.open>li a {
+    background-color: #fff;
+    color: #343434;
+}
+
+#cssmenu>ul>.pay-bill.active>li a:hover,
+#cssmenu>ul>.pay-bill.active>li a.active,
+#cssmenu>ul>.pay-bill.open>li a:hover,
+#cssmenu>ul>.pay-bill.open>li a.active {
+    background-color: #D7F5FF;
+    color: #e02729;
+}
+
+#cssmenu .active .sprite2.phone,
+#cssmenu .open .sprite2.phone,
+#cssmenu a:hover .sprite2.phone {
+    background-position: -77px -137px;
+}
+
+#cssmenu .sprite2.game {
+    width: 20px;
+    height: 14px;
+    background-position: 0 -190px;
+}
+
+#cssmenu .active .sprite2.game,
+#cssmenu .open .sprite2.game,
+#cssmenu a:hover .sprite2.game {
+    background-position: -30px -190px;
+}
+
+#cssmenu .sprite2.payment {
+    width: 18px;
+    height: 18px;
+    background-position: -1px -233px;
+}
+
+#cssmenu .active .sprite2.payment,
+#cssmenu .open .sprite2.payment,
+#cssmenu a:hover .sprite2.payment {
+    background-position: -32px -233px;
+}
+
+#cssmenu .sprite2.screen {
+    width: 18px;
+    height: 16px;
+    background-position: -2px -283px;
+}
+
+#cssmenu .active .sprite2.screen,
+#cssmenu .open .sprite2.screen,
+#cssmenu a:hover .sprite2.screen {
+    background-position: -32px -283px;
+}
+
+#cssmenu .sprite2.other {
+    width: 18px;
+    height: 18px;
+    background-position: -2px -329px;
+}
+
+#cssmenu .active .sprite2.other,
+#cssmenu .open .sprite2.other,
+#cssmenu a:hover .sprite2.other {
+    background-position: -32px -329px;
+}
+
+.sprite2.delete {
+    width: 14px;
+    height: 17px;
+    background-position: 0 -353px;
+    -webkit-transition-property: none;
+    transition-property: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.sprite2.delete:hover {
+    background-position: -36px -353px;
+}
+
+#cssmenu .has-sub li:hover a,
+#cssmenu .has-sub .active a {
+    background: transparent;
+}
+
+#cssmenu .open ul {
+    display: block;
+}
+
+#cssmenu .bgColor>li>a:hover,
+#cssmenu .bgColor>li.active>a,
+#cssmenu .bgColor>li.open>a {
+    color: fff;
+}
+
+#cssmenu .bgColor>li>ul>li>a:hover {
+    background-color: #ECFAFF;
+}
+
+#cssmenu .bgColor>li>ul>li>a.active {
+    background-color: #D7F5FF;
+}
+
+#cssmenu .bcColor>li>a:hover,
+#cssmenu .bgColor>li.active>a,
+#cssmenu .bgColor>li.open>a {
+    color: #fff;
+}
+
+#cssmenu .bcColor>li>ul>li>a.active {
+    color: #e02729;
+}
+
+#cssmenu .doanhThuBg>a:hover,
+#cssmenu .doanhThuBg.active>a,
+#cssmenu .doanhThuBg.open>a {
+    background-color: #5160b1;
+}
+
+#cssmenu .theGameBg>a:hover,
+#cssmenu .theGameBg.active>a,
+#cssmenu .theGameBg.open>a {
+    background-color: #9acf61;
+}
+
+#cssmenu .theDienThoaiBg>a:hover,
+#cssmenu .theDienThoaiBg.active>a,
+#cssmenu .theDienThoaiBg.open>a {
+    background-color: #a1538c;
+}
+
+#cssmenu .tienDienThoaiBg>a:hover,
+#cssmenu .tienDienThoaiBg.active>a,
+#cssmenu .tienDienThoaiBg.open>a {
+    background-color: #47c2ca;
+}
+
+#cssmenu .tienGameBg>a:hover,
+#cssmenu .tienGameBg.active>a,
+#cssmenu .tienGameBg.open>a {
+    background-color: #626262;
+}
+
+#cssmenu .hoaDonBg>a:hover,
+#cssmenu .hoaDonBg.active>a,
+#cssmenu .hoaDonBg.open>a {
+    background-color: #f0970a;
+}
+
+#cssmenu .thanhToanBg>a:hover,
+#cssmenu .thanhToanBg.active>a,
+#cssmenu .thanhToanBg.open>a {
+    background-color: #04abef;
+}
+
+#cssmenu .dichVuKhacBg>a:hover,
+#cssmenu .dichVuKhacBg.active>a,
+#cssmenu .dichVuKhacBg.open>a {
+    background-color: #507f74;
+}
+
+#cssmenu .transfersim>a:hover,
+#cssmenu .transfersim.active>a,
+#cssmenu .transfersim.open>a {
+    background-color: #229035;
+}
+
+
+.sprite3 {
+    background: url(../images/sprite3.png);
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#cssmenu .sprite3.card {
+    width: 20px;
+    height: 18px;
+    background-position: -1px -7px;
+}
+
+#cssmenu .active .sprite3.card,
+#cssmenu .open .sprite3.card,
+#cssmenu a:hover .sprite3.card {
+    background-position: 21px -7px;
+}
+
+#cssmenu .sprite3.check {
+    width: 18px;
+    height: 18px;
+    background-position: -1px -57px;
+}
+
+#cssmenu .active .sprite3.check,
+#cssmenu .open .sprite3.check,
+#cssmenu a:hover .sprite3.check {
+    background-position: -31px -57px;
+}
+
+#cssmenu .sprite3.book {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -106px;
+}
+
+#cssmenu .active .sprite3.book,
+#cssmenu .open .sprite3.book,
+#cssmenu a:hover .sprite3.book {
+    background-position: -31px -106px;
+}
+
+#cssmenu .sprite3.history {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -152px;
+}
+
+#cssmenu .active .sprite3.history,
+#cssmenu .open .sprite3.history,
+#cssmenu a:hover .sprite3.history {
+    background-position: -31px -152px;
+}
+
+#cssmenu .sprite3.chart {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -190px;
+}
+
+#cssmenu .active .sprite3.chart,
+#cssmenu .open .sprite3.chart,
+#cssmenu a:hover .sprite3.chart {
+    background-position: -31px -190px;
+}
+
+#cssmenu .sprite3.report {
+    width: 16px;
+    height: 18px;
+    background-position: -1px -237px;
+}
+
+#cssmenu .active .sprite3.report,
+#cssmenu .open .sprite3.report,
+#cssmenu a:hover .sprite3.report {
+    background-position: -33px -237px;
+}
+
+#cssmenu .sprite3.stats {
+    width: 18px;
+    height: 17px;
+    background-position: 0 -282px;
+}
+
+#cssmenu .active .sprite3.stats,
+#cssmenu .open .sprite3.stats,
+#cssmenu a:hover .sprite3.stats {
+    background-position: -31px -282px;
+}
+
+.buy-card-types .card-icon {
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/buy-cart.png) center no-repeat;
+    margin-right: 5px;
+}
+
+#cssmenu ul li.buy-card-types.active a {
+    background-color: #0ac7af;
+    color: #fff;
+}
+
+.buy-card-types.active .card-icon {
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/buy-cart-white.png) center no-repeat;
+}
+
+.SideBarLeft {
+    font-family: "roboto-light";
+}
+
+#cssmenu {
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+}
+
+#cssmenu>ul>li:last-child>a {
+    border-bottom: 0;
+}
+
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+
+    display: block;
+    position: relative;
+}
+
+#cssmenu {
+    width: 100%;
+    display: block;
+}
+
+#cssmenu ul ul {
+    display: none;
+}
+
+.align-right {
+    float: right;
+}
+
+#cssmenu>ul>li>a {
+    padding: 14px 14px;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    z-index: 2;
+    text-decoration: none;
+    background: #f9f9f9;
+    text-transform: uppercase;
+    color: #262626;
+}
+
+#cssmenu>ul>li>a:hover,
+#cssmenu>ul>li.active>a,
+#cssmenu>ul>li.open>a {
+    color: #fff;
+    background: #2c9639e0;
+}
+
+.holder {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.holder::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    right: 12px;
+    z-index: 10;
+    top: 18px;
+    border-left: 5px solid #606060;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+
+/* #cssmenu > ul > li.active > a > span::after, */
+
+#cssmenu>ul>li.open>a>span::after {
+    top: 22px;
+    border-top: 5px solid #606060;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+#cssmenu>ul>li.open[class*='Bg']>a>span::after {
+    border-top: 5px solid #fff !important;
+}
+
+#cssmenu ul ul li a {
+    cursor: pointer;
+    line-height: 1.4;
+    padding: 15px 10px 15px 30px;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: none;
+    color: #776e6e;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#cssmenu ul ul li a.active {
+    color: #e02729;
+}
+
+#cssmenu ul ul li:hover>a,
+#cssmenu ul ul li.open>a,
+#cssmenu ul ul li.active>a {
+    background: #eeeeee;
+    color: #e02729;
+}
+
+#cssmenu ul ul li:first-child>a {
+    box-shadow: none;
+}
+
+#cssmenu>ul>li>ul>li.open:last-child>ul>li:last-child>a {
+    border-bottom: 0;
+}
+
+#cssmenu ul ul li.has-sub>a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    right: 20px;
+    z-index: 10;
+    top: 11.5px;
+    border-top: 2px solid #444;
+    border-left: 2px solid #444;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#cssmenu ul ul li.active>a::after,
+#cssmenu ul ul li.open>a::after,
+#cssmenu ul ul li>a:hover::after {
+    border-color: #ffffff;
+}
+
+
+.MainContent {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    min-height: 450px;
+}
+
+@media(max-width:991px){
+    *{}
+    #cssmenu .bgColor li{
+        font-size: 14px;
+    } 
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+    .Block2Right {
+      padding: 10px;
+      height: 139px;
+    }
+  
+    .Block1Left {
+      width: 60%;
+      float: left;
+      height: 150px;
+      padding: 10px;
+    }
+  
+    .Block1Right {
+      width: 39%;
+      float: right;
+    }
+  
+    .Block1Sub1 {
+      display: block;
+      width: 100%;
+      margin-bottom: 6px;
+      height: 72px;
+    }
+  
+    .Block2Right {
+      width: 39%;
+      float: right;
+    }
+  
+    .Block2Left {
+      width: 60%;
+    }
+  
+    .Block2Left .BlockSub2 {
+      height: auto;
+    }
+  }
+   .SideBar {
+      display: none;
+    }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+      .gTooltip, #fixedSupport{display: none;}
+      .support-left{display:none;}
+      .BlockBank .lbl{font-size: 24px;}
+      .BlockBank .gate{padding-right: 2px; font-size: 18px;}
+      .Block1Right {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  }
+  
+  @media only screen and (max-width: 480px) {
+      .BlockBank .lbl{font-size: 13px !important;}
+      .BlockBank .gate{font-size: 12px;}
+      .BlockTop1{ margin-bottom:4px;}
+       
+  }
+  
+  @media only screen and (min-width: 768px) {
+      #napthe-block a{ text-align: center;}
+      .navbar-collapse{width: 83.33333333%;}
+      .Block1Right {
+        text-align: center;
+        margin-bottom: 0;
+      }
+  
+    .TopService {
+      float: left;
+    }
+  
+    .SideBar {
+      float: right;
+    }
+  
+    .BlockPaid .BankPaid .BankName {
+      width: 20%;
+    }
+  
+    .Title22 {
+      font-size: 22px;
+    }
+  
+    #footer .BlockFooterAbove .BlockRightFooter .LinkFooter li {
+      display: inline-block;
+    }
+  
+    #topNav li a {
+      font-size: 16px;
+    }
+     
+  }
+  
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 1200px) {
+      .StepRegist li:not(.Current){display: none;}
+  
+  }
+  
+  @media only screen and (max-width: 630px) {
+      .RegDaily{top: 40px; margin-right: 0; clear: both;}
+      .RegisHosline{top: -60px; right: -15px;}
+  }
+  
+  @media only screen and (max-width: 1024px) {
+      .SideBar {width: 100% !important;}
+      .ListAdvertiser{margin-left: 0; padding-left: 0;}
+      .ListAdvertiser img{max-width: 100%; height: auto;}
+      .ListAdvertiser{display: none;}
+  }
+  
+  @media only screen and (min-width: 992px) {
+       #napthe-block{ display: none;}
+      .AccountLogin .avatar img{ margin-top:-10px !important;}
+    .SideBar {
+      width: 245px;
+      display:block;
+    }
+  
+    .SideBar h2.HotNew {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 11px;
+      line-height: 32px;
+    }
+    .SideBar h2.HotNew span {
+      display: inline-block;
+    }
+  
+    ul.ListTopNews {
+      margin-bottom: 0;
+    }
+  
+    ul.ListTopNews li {
+      margin: 5px 0px;
+    }
+  
+    #adsSliderWrapper{position: relative;}
+    #adsSliderWrapper .paginator{position: absolute; bottom: 8px; left: 0; width: 100%; text-align: center;}
+    #adsSliderWrapper .navItem{margin: 0 5px; width: 12px; height: 12px; box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8); background-color: #fff; border-radius: 50%; cursor: pointer;}
+    #adsSliderWrapper .selected{background-color: rgba(181, 181, 181, 0.36); cursor: default;}
+  
+    ul.ListAdvertiser {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+      height: 340px;
+    }
+    ul.ListAdvertiser li {
+      float: left;
+      display: block;
+      display: none;
+    }
+    ul.ListAdvertiser li:first-child{display: block;}
+  
+    .Support {
+      position: absolute;
+      right: 10px;
+      bottom: 0px;
+    }
+  
+    .BlockRightFooter {
+      text-align: right;
+    }
+  
+    .Schedule h3 {
+      float: right;
+      margin-right: 15px;
+    }
+  
+    .OpenWorking {
+      margin-top: 4px;
+      float: right;
+    }
+  
+    .CopyRight p {
+      text-align: left;
+    }
+  
+    .LogoBottom {
+      margin-top: 30px;
+    }
+  
+    .PartnerLogo .ListPartner li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .Block2Right .Icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+  
+    .Block2Left .BlockSub2 .Icon {
+      width: 51px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .BlockTop1, .BlockTop2 {
+      display: inline-block;
+      width: 100%;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  
+    .BlockTop1 {
+      margin-bottom: -5px;
+    }
+  
+    .Block1Sub1 {
+      padding: 15px 10px;
+    }
+  
+    .Block1Left {
+      width: 466px;
+      height: 250px;
+      margin-right: 5px;
+      padding: 20px 80px;
+    }
+  
+    .BlockTop1 .TextLarge, .BlockTop2 .TextLarge {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+  
+    .Block2Left .BlockSub2 .TextLarge {
+      font-size: 18px;
+    }
+  
+    .Block1Right {
+      width: 310px;
+      margin-bottom: 0;
+    }
+  
+    .Block1Right .Block1Sub1 {
+      height: 122px;
+      margin-bottom: 6px;
+    }
+  
+    .Block2Right {
+      width: 310px;
+      height: 250px;
+      padding: 30px;
+    }
+  
+    .Block2Left {
+      width: 468px;
+    }
+  
+    .Block2Left .BlockSub2 {
+      height: 122px;
+      margin: 0px 1px 6px 1px;
+      width: 230px;
+      padding: 15px 10px;
+    }
+  
+    .Block1Sub1 .TextLarge {
+      font-size: 20px;
+    }
+  
+    .Block1Left .Icon {
+      width: 98px;
+      height: auto;
+    }
+  
+    .Block1Right .Icon {
+      width: 51px;
+      height: auto;
+    }
+  }
+
+/*Sidebar support*/
+
+
+.ib {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+
+#fixedSupport {
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 9;
+}
+
+#fixedSupport a {
+    text-decoration: none;
+}
+
+#fixedSupport ul {
+    list-style-type: none;
+    margin-top: -50px;
+    padding: 0;
+    font-size: 10px;
+    border: 1px solid #ececec;
+    background-color: #f3f3f3;
+}
+
+#fixedSupport .lbl {
+    display: block;
+    margin-top: 5px;
+}
+
+#fixedSupport .item {
+    color: #000;
+    display: block;
+    padding: 8px 7px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#fixedSupport li:last-child a {
+    border-bottom: 0;
+}
+
+#fixedSupport .item.active {
+    background-color: #e02729;
+    color: #fff !important;
+}
+
+#fixedSupport .sprite {
+    background: url(../images/sprite-fixed-support.png);
+}
+
+#fixedSupport .sprite.register {
+    width: 26px;
+    height: 27px;
+    background-position: 0 0;
+}
+
+#fixedSupport .sprite.recharge {
+    width: 27px;
+    height: 27px;
+    background-position: -1px -58px;
+}
+
+#fixedSupport .sprite.support {
+    width: 21px;
+    height: 21px;
+    background-position: -1px -119px;
+}
+
+#fixedSupport .sprite.feedback {
+    width: 23px;
+    height: 15px;
+    background-position: 0px -185px;
+}
+
+#fixedSupport .sprite.yahoo {
+    width: 23px;
+    height: 25px;
+    background-position: -1px -246px;
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    #fixedSupport {
+        display: none;
+    }
+    .support-left {
+        display: none;
+    }
+}
+
+
+#fixedtotop{
+    position:fixed;
+    right:10px;
+    z-index:10;
+    top:80%;
+}
+.to-top{
+    background:url(../images/icon_top.png) left top no-repeat;
+    display:block;
+    width:58px;
+    height:58px;
+}
+#fixedphao{
+    position:fixed;
+    z-index:9999;
+    top:50px;
+    display:none;
+
+}
+@media (min-width:986px){
+    #fixedphao {
+        display:block;
+    }
+}
+
+
+/* Custom Screen Width change by Case*/
+
+.support-left {
+    background: url(../images/cskh.png) no-repeat left top;
+    height: 79px;
+    padding-top: 15px;
+}
+
+.support-left p {
+    text-transform: uppercase;
+    padding-left: 60px;
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+
+.support-left .mobile {
+    font-size: 24px;
+}
+
+
+/*Block content*/
+
+.blockContent {
+    margin-bottom: 70px;
+    font-family: "roboto-light";
+}
+.blockContent h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ececec;
+  line-height: 30px;
+}
+.blockContent h3 span {
+  border-bottom: 2px solid #e02729;
+  padding: 10px 0px 5px;
+}
+
+
+/* Card */
+.GoldRecharge .BlockBank ul li a img {max-width: 99.9%;}
+.GoldRecharge {
+    display: block;
+  }
+  .GoldRecharge .BlockBank ul {
+    padding: 10px 0;
+  }  
+  .ListCardBank ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .ListCardBank ul li {
+    float: left;
+  }
+  .ListCardBank ul li a img {
+    border: 1px solid #ececec;
+  }
+  
+  .InfoGoldCharge{display: none; margin-top: 40px;}
+  .InfoGoldCharge .form-group {
+    margin-bottom: 10px;
+  }
+  .InfoGoldCharge .RegNow {
+    display: inline-block;
+  }
+
+  /* sale card */
+  .ColorLighBlue {
+    color: #1ebce9;
+  }
+  
+  .CashRecharge {
+    display: block;
+  }
+  
+  .BlockBank {
+    text-align: center;
+  }
+  .BlockBank .col-md-2, .ListCardBank .col-md-2{margin: 7px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBank .col-md-3, .ListCardBank .col-md-3{margin: 12px 0; padding-left: 11px; padding-right: 11px;}
+  .BlockBank .col-md-4, .ListCardBank .col-md-4{margin: 9px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBank .col-md-5ths, .ListCardBank .col-md-5ths{margin: 0 0 20px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBank .col-md-2 img, .ListCardBank .col-md-2 img{max-width: 100%; width: 116px; height: 64px;}
+  .BlockBank .col-md-4 img, .ListCardBank .col-md-4 img{max-width: 100%; width: 168px; height: 81px;}
+  .BlockBank ul {
+    list-style: none;
+    padding: 10px 30px;
+  }
+  
+  .BlockBank ul li a {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #ccc;
+  }
+  .BlockBank ul li a:focus, .BlockBank ul li a:hover, .BlockBank ul li a.active {
+    border: 1px solid #e02729;
+  }
+  .BlockBank ul li a:focus:after{position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBank ul li a.active:after{ position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBank .lbl{position: absolute; display: block; width: 100%; top: 76%; left: 0; font-size: 28px; text-align: center; color:#f8ac34; font-family:sans-serif;}
+  .BlockBank .gate{top: inherit; bottom: 1%; padding-right: 10px; font-size: 18px; text-align: right; color: #fff; font-weight: bold; text-shadow: 0 1px 0 #000;}
+  .BlockBank .million{bottom: 2%; padding-right: 5px; font-size: 16px;}
+  .BlockBank a:hover{color: inherit;}
+  
+  
+  .BlockBankNew {
+    text-align: center;
+  }
+  .BlockBankNew .col-md-2, .ListCardBank .col-md-2{margin: 7px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBankNew .col-md-3, .ListCardBank .col-md-3{margin: 12px 0; padding-left: 11px; padding-right: 11px;}
+  .BlockBankNew .col-md-4, .ListCardBank .col-md-4{margin: 9px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBankNew .col-md-5ths, .ListCardBank .col-md-5ths{margin: 0 0 20px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBankNew .col-md-2 img, .ListCardBank .col-md-2 img{max-width: 100%; width: 116px; height: 64px;}
+  .BlockBankNew .col-md-4 img, .ListCardBank .col-md-4 img{max-width: 100%; width: 168px; height: 81px;}
+  .BlockBankNew ul {
+    list-style: none;
+    padding: 10px 30px;
+  }
+  
+  .BlockBankNew ul li a {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #ccc;
+  }
+  .BlockBankNew ul li a:focus, .BlockBankNew ul li a:hover, .BlockBankNew ul li a.active {
+    border: 1px solid #e02729;
+  }
+  .BlockBankNew ul li a:focus:after{position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBankNew ul li a.active:after{ position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBankNew .lbl{position: absolute; display: block; width: 100%; top: 76%; left: 0; font-size: 28px; text-align: center; color:#f8ac34; font-family:sans-serif;}
+  .BlockBankNew .gate{top: inherit; bottom: 1%; padding-right: 10px; font-size: 18px; text-align: right; color: #fff; font-weight: bold; text-shadow: 0 1px 0 #000;}
+  .BlockBankNew .million{bottom: 2%; padding-right: 5px; font-size: 16px;}
+  .BlockBankNew a:hover{color: inherit;}
+  
+  .InfoBank .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+  
+
+  /* Profile */
+.ColorDo {color: #e02729;
+    font-weight: 700;
+}
+.InfoCurrent .form-horizontal .control-label {
+    font-weight: normal;
+  }
+.RegNow {
+	background: #e02729;
+	padding: 8px 20px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	border: 0;
+}
+.RegNow:hover, .RegNow:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+@media (max-width: 700px){
+    .selectpicker {
+        min-width: 85px;
+    }
+ }
