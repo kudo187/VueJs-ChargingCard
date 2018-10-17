@@ -1,27 +1,28 @@
 <template>
-  <div id="app" class="app">
+  <div id="app">
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 }
 </script>
 
-<style lang="scss">
-  @import "sass/main";
-  @import "./assets/client/css/main.css";
+<style>
+@import "./assets/client/css/main.css";
   @import "./assets/client/css/manage-card.css";
   @import "./assets/client/styles/main_styles.css";
-  @import "./assets/client/styles/responsive.css";  
-  
-  
-  body {
-    height: 100%;
-    #app {
-      height: 100%;
-    }
-  }
+  @import "./assets/client/styles/responsive.css";
+  @import 'bootstrap/dist/css/bootstrap.css';
+  @import 'bootstrap-vue/dist/bootstrap-vue.css';
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

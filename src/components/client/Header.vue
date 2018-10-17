@@ -19,26 +19,6 @@
                                 <li>
                                     <router-link to="contact">liên hệ</router-link>
                                 </li>
-                                <li>
-                                    <button class="chip  row" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <div class="col-md-3">
-                                        <img class="img-responsive" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="Contact Person">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <span> Khoa</span>
-                                        <br>Số dư:
-                                        <span class="ColorDo">100 Gold</span>
-                                    </div>
-                                </button>
-                                    <div class="dropdown-menu text-manage-profile">
-                                        <router-link class="dropdown-item drprofile" to="/manage-profile">
-                                            <i class="fa fa-user mr-2"></i> Thông tin cá nhân</router-link>
-                                        <router-link class="dropdown-item drprofile" to="/manage-profile/change-password">
-                                            <i class="fa fa-key mr-2"></i>Đổi mật khẩu</router-link>
-                                        <a class="dropdown-item drprofile" >
-                                        <i class="fa fa-sign-out mr-2"></i> Log out</a>
-                                    </div>
-                                </li>
                                 <li class="account">
                                     <a>
                                     Cá nhân
@@ -182,7 +162,12 @@
 
 <script>
 export default {
-    name: 'Header',
+  name: 'Header',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
 }
 </script>
 
