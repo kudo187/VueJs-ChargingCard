@@ -162,42 +162,41 @@
 
 <script>
 export default {
-  name: 'Header',
-  data () {
+  name: "Header",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      msg: "Welcome to Your Vue.js App"
+    };
   }
-}
+};
 </script>
 
 <style>
 button.chip {
-    padding: 25px;
-    background: none;
-    border: none;
-
+  padding: 25px;
+  background: none;
+  border: none;
 }
 
 .chip img {
-    width: 50px;
-    border-radius: 50%;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .dropdown-menu.text-manage-profile.show {
-    top: -20px;
-    left: 40px;
+  top: -20px;
+  left: 40px;
 }
 
 a.drprofile.dropdown-item:hover {
-    color: red !important;
+  color: red !important;
 }
 
 .text-manage-profile a {
-    border-bottom: 1px solid #2f3133;
+  border-bottom: 1px solid #2f3133;
 }
 
 .text-manage-profile a:last-child {
-    border-bottom: none
+  border-bottom: none;
 }
 </style>

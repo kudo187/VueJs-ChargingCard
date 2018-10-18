@@ -109,10 +109,9 @@
 
 <script>
 export default {
-    name: 'BuyCardViettel'
-}
+  name: "BuyCardViettel"
+};
 </script>
 
 <style>
-    
 </style>

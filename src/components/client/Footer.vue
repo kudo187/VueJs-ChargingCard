@@ -74,15 +74,14 @@
 
 <script>
 export default {
-  name: 'Footer',
-  data (){
+  name: "Footer",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      msg: "Welcome to Your Vue.js App"
+    };
   }
-}
+};
 </script>
 
 <style >
-    
 </style>

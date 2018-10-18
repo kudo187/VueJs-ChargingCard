@@ -170,22 +170,21 @@
 </template>
 
 <script>
-import Header from './Header.vue'
-import Footer from './Footer.vue';
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
 export default {
-    name: 'Home',
-    data() {
-        return {
-            msg: 'Welcome to Your Vue.js App'
-        }
-    },
-    components: {
-        Header,
-        Footer
-    }
-}
+  name: "Home",
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App"
+    };
+  },
+  components: {
+    Header,
+    Footer
+  }
+};
 </script>
 
 <style >
-    
 </style>
